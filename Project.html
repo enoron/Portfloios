@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      .navbar {
+        background-color: maroon;
+        padding: 25px 29px;
+      }
+      .navbar ul {
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        list-style-type: none;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 35px 30px;
+        width: 100px;
+      }
+      .main {
+        width: 100%;
+        background-color: black;
+      }
+      .welcome-section {
+        display: flex;
+        background-color: black;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+      }
+      .welcome-section h1 {
+        color: white;
+        font-size: 60px;
+      }
+      .welcome-section p,
+      i {
+        color: brown;
+        font-size: 25px;
+      }
+      .header {
+        margin-top: 5px;
+        margin-bottom: 200px;
+      }
+      .flex-container {
+        background-color: rgb(83, 102, 147);
+        height: 150vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .head {
+        text-align: center;
+        margin-left: 400px;
+        margin-right: 400px;
+        color: white;
+      }
+      .card {
+        width: 600px;
+        margin-top: 10px;
+        max-width: 400px;
+        background-color: rgb(41, 40, 47);
+        text-align: center;
+      }
+      .card p {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .code {
+        color: rgb(41, 40, 47);
+      }
+      .card:hover .code {
+        color: orangered;
+        transition: 1s;
+      }
+      footer {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        bottom: 0;
+      }
+      .footer {
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(50, 70, 100);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .footer-header h1 {
+        align-items: center;
+        margin-top: 110px;
+        font-size: 4rem;
+        color: white;
+      }
+      .footer-header p i {
+        font-style: italic;
+        color: white;
+        margin-left: 120px;
+      }
+      .end-links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 22px;
+      }
+      .end a {
+        font-size: 21px;
+        color: white;
+        margin-top: 1px;
+        margin-bottom: 100px;
+        text-decoration: none;
+      }
+      .end-links a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s ease;
+      }
+      .end-links :hover {
+        color: white;
+        transform: translateY(8px);
+      }
+      .end-footer {
+        background-color: rgb(49, 59, 68);
+        border-top: rgb(165, 30, 30) solid;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+      }
+      #back-to-top {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        right: 10px;
+        bottom: 10px;
+        position: fixed;
+        animation-name: move;
+        animation: move 2s ease-in-out infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          justify-content: center;
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="welcome-section">
+      <div class="header">
+        <h1>Hey i am Mimic</h1>
+        <p><i>a web developerz</i></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <h1 class="head">This are some of my projects</h1>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>Tribute pages<span class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>Random Quote Machine<span class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>JavasScript Calculator<span class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>Map Data Across the Globe<span
+            class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>Wikipedia Viewer<span class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+          style="height: 400px; width: 100%"
+        />
+        <p>
+          <span class="code">&lt;</span>Tic Tac Teo Game<span class="code"
+            >/&gt;</span
+          >
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-header">
+        <h1>Let's work together...</h1>
+        <p><i>How do you take your coffe?</i></p>
+        <div class="end-links">
+          <a href="#">FACEBOOK</a>
+          <a href="#">TWITTER</a>
+          <a href="#">GITHUB</a>
+          <a href="#">SEND A MAIL</a>
+          <a href="#">CALL ME</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <button id="back-to-top">back-to-top</button>
+    </footer>
+  </body>
+</html>
